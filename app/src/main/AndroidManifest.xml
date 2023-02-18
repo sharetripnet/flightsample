@@ -20,6 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="net.sharetrip.flight.droidKey"
+            android:value="22DF8692EAA4DF53C051632D81AABD4C" />
+
     </application>
 
 </manifest>
