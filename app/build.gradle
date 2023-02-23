@@ -34,8 +34,8 @@ android {
 }
 
 dependencies {
-
-    implementation'com.github.sharetriptech:flight:0.9.9'
+    implementation'com.github.sharetriptech:flight:0.9.11'
+    //implementation 'com.github.jubayar.flightlib:flight-bl:0.9.94'
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
