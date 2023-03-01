@@ -35,7 +35,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="net.sharetrip.provider"
+            android:authorities="net.sharetrip.flight.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
