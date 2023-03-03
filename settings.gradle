@@ -8,11 +8,12 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        mavenLocal()        // Added maven local for added dependency from local repository
         google()
         mavenCentral()
         jcenter()
-        maven { url 'https://jitpack.io' }
+        maven { url 'https://jitpack.io'
+            credentials { username "jitpack_token" }
+        }
     }
 }
 rootProject.name = "Flight Sample"
