@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity(), STPartnerUserTokenValidationListener {
 
         findViewById<TextView>(R.id.tvOpenSDK).setOnClickListener {
             Log.d("locale", locale.displayName)
-            FlightHomeActivity.openFlightSearchService(this, "MyBl", "$2b$10$" + "o5H2ZArEYaVOa7.JLxRHJOaR7hD7ggOgTtZByeLfKr8VghocrbQwu", this)
+            FlightHomeActivity.openFlightSearchService(this, "MyBl", "$2b$10$" + "I6MLQnV73jwkiYMl/iX14.4byykXcUheTuzLalfsYHULmdBUQszNS", this)
             //FlightHistoryActivity.openFlightHistoryService(this, "MyBl", "my_bl_user_token")
         }
     }
