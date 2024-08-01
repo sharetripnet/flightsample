@@ -29,11 +29,10 @@ class MainActivity : AppCompatActivity(), STPartnerUserTokenValidationListener {
             Log.d("locale", locale.displayName)
 
             //stg
-//            FlightHomeActivity.openFlightSearchService(this, "MyBl", "$2b$10$" + "FnX0LATpRyW/WLEeC/fXoenti.2ZVTJ4oJ7wMQyylAGt89k5Hu7/C", this)
+            FlightMainActivity.openFlightSearchService(this, "MyBl", "$2b$10$" + "FnX0LATpRyW/WLEeC/fXoenti.2ZVTJ4oJ7wMQyylAGt89k5Hu7/C", this)
 
             //prod
-            FlightMainActivity.openFlightSearchService(this, "MyBl", "$2b$10$" + "EO8u6KbU6wu1mcCXIqw07.uNGB1pxv4oRX/.HeAE3e5ByTt5uSaWa", this)
-            //FlightHistoryActivity.openFlightHistoryService(this, "MyBl", "my_bl_user_token")
+//            FlightMainActivity.openFlightSearchService(this, "MyBl", "$2b$10$" + "EO8u6KbU6wu1mcCXIqw07.uNGB1pxv4oRX/.HeAE3e5ByTt5uSaWa", this)
         }
     }
 
