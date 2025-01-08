@@ -7,6 +7,10 @@ android {
     namespace 'net.sharetrip.flightsample'
     compileSdk 34
 
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+
     defaultConfig {
         applicationId "net.sharetrip.flightsample"
         minSdk 21
@@ -25,18 +29,19 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
     buildFeatures { dataBinding = true }
 }
 
 dependencies {
-    implementation 'com.github.sharetripnet.stdroid:flight:1.1.2'
-//    implementation 'com.github.sharetriptech:flight:1.0.10'
+//    implementation 'com.github.sharetripnet.stdroid:flight:1.1.2'
+    implementation 'com.github.sharetriptech:flight:1.2.0'
 
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.7.0'
@@ -47,4 +52,5 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.4'
 }
