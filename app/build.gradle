@@ -40,7 +40,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.sharetripnet.stdroid:flight:1.2.10' //from remote repository
+    implementation 'com.github.sharetripnet.stdroid:flight:1.2.9' //from remote repository
 //    implementation 'com.github.sharetriptech:flight:1.2.10' //from local release
 
     implementation 'androidx.core:core-ktx:1.10.1'
