@@ -29,10 +29,10 @@ class MainActivity : AppCompatActivity(), STPartnerUserTokenValidationListener {
             Log.d("locale", locale.displayName)
 
             //stg
-            FlightMainActivity.openFlightSearchService(this, "MyBl", "$2b$10$" + "YXBj02rxOJHMEWkV/Da64.sBJvbAWWng2X4tPgV16WAc8nb/BDr3i", this)
+            FlightMainActivity.openFlightSearchService(this, "MyBl", "$2b$10$" + "rZ4haTXRVz.iDazn5W2vPuHK.m3UmZK/qRD3BiaXOxNF/nTX31Hcu", this)
 
             //prod
-//            FlightMainActivity.openFlightSearchService(this, "MyBl", "$2b$10$" + "EO8u6KbU6wu1mcCXIqw07.uNGB1pxv4oRX/.HeAE3e5ByTt5uSaWa", this)
+//            FlightMainActivity.openFlightSearchService(this, "MyBl", "$2b$10$" + "dont commit this token", this)
         }
     }
 
