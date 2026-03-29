@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'net.sharetrip.flightsample'
-    compileSdk 34
+    compileSdk 36
 
     lint {
         baseline = file("lint-baseline.xml")
@@ -14,7 +14,7 @@ android {
     defaultConfig {
         applicationId "net.sharetrip.flightsample"
         minSdk 21
-        targetSdk 34
+        targetSdk 36
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -40,9 +40,9 @@ android {
 }
 
 dependencies {
+    //implementation 'com.github.sharetriptech:flight:1.2.32' //from local release
     //implementation 'com.github.sharetripnet.stdroid:flight:1.2.21-stg' // from remote repository debug build
-    implementation 'com.github.sharetripnet.stdroid:flight:1.2.21' //from remote repository release build
-    //implementation 'com.github.sharetriptech:flight:1.2.22' //from local release
+    implementation 'com.github.sharetripnet.stdroid:flight:1.2.32' //from remote repository release build
 
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.7.0'
