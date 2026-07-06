@@ -27,17 +27,16 @@ class MainActivity : AppCompatActivity(), STPartnerUserTokenValidationListener {
 
         findViewById<TextView>(R.id.tvOpenSDK).setOnClickListener {
             Log.d("locale", locale.displayName)
-
-            //stg
-            FlightMainActivity.openFlightSearchService(this, "MyBl", "$2b$10$" + "rZ4haTXRVz.iDazn5W2vPuHK.m3UmZK/qRD3BiaXOxNF/nTX31Hcu", this)
-
-            //prod
-//            FlightMainActivity.openFlightSearchService(this, "MyBl", "$2b$10$" + "dont commit this token", this)
+            FlightMainActivity.openFlightSearchService(
+                context = this,
+                clientId = "MyBl",
+                token = "$2b$10\$UHmfcH2FsKOXcdqSBMZ6seZWuUQz9nCIxdiv/hfV9M0CGGYmtd8Z2",
+                listener = this
+            )
         }
     }
 
     override fun response(isValid: Boolean, token: String) {
-        if (!isValid)
-            FlightMainActivity.updateUserToken(this, token)
+        if (!isValid) FlightMainActivity.updateUserToken(this, token)
     }
 }

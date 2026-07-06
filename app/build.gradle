@@ -42,9 +42,9 @@ android {
 }
 
 dependencies {
-    //implementation 'com.github.sharetriptech:flight:1.2.34' //from local release
-    implementation 'com.github.sharetripnet.stdroid:flight:1.2.34-stg' // from remote repository debug build
-    //implementation 'com.github.sharetripnet.stdroid:flight:1.2.34' //from remote repository release build
+    //implementation 'com.github.sharetriptech:flight:1.2.38' //from local release
+    implementation 'com.github.sharetripnet.stdroid:flight:1.2.38-stg' // from remote repository debug build
+    //implementation 'com.github.sharetripnet.stdroid:flight:1.2.38' //from remote repository release build
 
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.7.0'
